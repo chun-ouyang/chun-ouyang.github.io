@@ -1,0 +1,12 @@
+To add a new collection:
+
+0. Create new entries in _config.yml ("Collections" and "Defaults")
+1. Change _data/navigation.yml
+2. Create a new folder under the root folder, e.g., "_research"
+3. Populate the content folder (so that it knows what contents to display)
+4. Create a new file under _pages (so that it knows how to display the contents)
+
+
+To generate .md files compatible with the template:
+* Use markdown_generator/pubsFromBib.py, which takes 2 input sources (one for bib entries of proceeding papers, the other for bib entries of journal papers), and populates the _publications folder with the generated .md files as results.
+* 
