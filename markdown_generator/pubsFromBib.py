@@ -24,10 +24,17 @@ import html
 import os
 import re
 
-#todo: incorporate different collection types rather than a catch all publications, requires other changes to template
+#todo: incorporate different collection types rather than a catch all
+#publications, requires other changes to template
+
+import sys
+
+fn_bib_file_proceeding = sys.argv[1]
+fn_bib_file_journal = sys.argv[2]
+
 publist = {
     "proceeding": {
-        "file" : "proceedings.bib",
+        "file" : fn_bib_file_proceeding,
         "venuekey": "booktitle",
         "venue-pretext": "In the proceedings of ",
         "collection" : {"name":"publications",
@@ -35,7 +42,7 @@ publist = {
         
     },
     "journal":{
-        "file": "pubs.bib",
+        "file": fn_bib_file_journal,
         "venuekey" : "journal",
         "venue-pretext" : "",
         "collection" : {"name":"publications",
