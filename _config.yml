@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Chun Ouyang"
   avatar           : "avatar.jpg" # TODO-CO: put a image file under "images" and specify
-  bio              : # TODO-CO: write a short bio for yourself
+  bio              : "PhD, Senior Lecturer" # TODO-CO: write a short bio for yourself
   location         : "Brisbane, Australia"
   employer         : "Queensland University of Technology" # TODO-CO: confirm 
   pubmed           : 
