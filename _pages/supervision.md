@@ -3,6 +3,7 @@ layout: single
 title: "Supervision"
 permalink: /supervision/
 author_profile: true
+share: true
 ---
 
 {% include base_path %}
