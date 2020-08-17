@@ -1,14 +1,17 @@
 # main links links
 main:
-  - title: "Research"
+  - title: "Research"       # single page
     url: /research/
     
-  - title: "Publications"
-    url: /publications/
+  - title: "Projects"
+    url: /projects/
 
   - title: "Teaching"
     url: /teaching/    
 
-  - title: "CV"
-    url: /cv/
+  - title: "Supervision"    # single page
+    url: /supervision/
+
+  - title: "Grants"    # single page
+    url: /grants/
     
