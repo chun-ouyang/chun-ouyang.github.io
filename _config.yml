@@ -7,16 +7,16 @@
 
 # Site Settings
 locale                   : "en-AU"
-title                    : "Roy Jing Yang"
+title                    : "Chun Ouyang" # TODO-CO
 title_separator          : "-"
-name                     : &name "Jing Yang"
-description              : &description "personal website"
-url                      : http://royjy.me/academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Chun Ouyang"
+description              : &description "personal website" # TODO-CO
+url                      : http://royjy.me/academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io", TODO-CO
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "roy-jingyang/academicpages.github.io"
+repository               : "roy-jingyang/academicpages.github.io" # TODO-CO
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
+words_per_minute         : 160 # TODO-CO
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jing Yang"
-  avatar           : "profile.jpg"
-  bio              : "Yet another PhD student"
+  name             : "Chun Ouyang"
+  avatar           : # TODO-CO: put a image file under "images" and specify
+  bio              : # TODO-CO: write a short bio for yourself
   location         : "Brisbane, Australia"
-  employer         : "QUT"
+  employer         : "Queensland University of Technology" # TODO-CO: confirm 
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=Ms1FNhsAAAAJ&hl=en"
-  email            : "roy.j.yang@qut.edu.au"
+  googlescholar    : "https://scholar.google.com/citations?user=aQqD_CQAAAAJ&hl=en&oi=ao"
+  email            : "c.ouyang@qut.edu.au" # TODO-CO: confirm 
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "roy-jingyang"
+  github           : # TODO-CO
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : 
+  linkedin         : "https://www.linkedin.com/in/chunouyang/"
+  orcid            : "https://orcid.org/0000-0001-7098-5480"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -115,6 +115,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  dblp             : "https://dblp.org/pers/hd/o/Ouyang:Chun"
 
 
 # Reading Files
@@ -179,15 +180,15 @@ collections:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
-    permalink: /:collection/:path/
-  research:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
+    output: false
+    permalink: /:collection/:path/
+  projects:
     output: true
     permalink: /:collection/:path/
 
@@ -220,7 +221,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -239,15 +240,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _research
-  - scope:
-      path: ""
-      type: research
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
   # _talks
   - scope:
       path: ""
@@ -256,6 +248,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: false
 
 # Sass/SCSS
 sass:
@@ -267,7 +268,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Australia/Brisbane # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

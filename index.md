@@ -1,2 +1,1 @@
-### Something about Jing Yang
-Something
+The index page.
