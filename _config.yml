@@ -11,9 +11,9 @@ title                    : "Chun Ouyang" # TODO-CO
 title_separator          : "-"
 name                     : &name "Chun Ouyang"
 description              : &description "PhD, Senior Lecturer" # TODO-CO
-url                      : http://royjy.me/academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io", TODO-CO
+url                      : https://chun-ouyang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io", TODO-CO
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "roy-jingyang/academicpages.github.io" # TODO-CO
+repository               : "chun-ouyang/chun-ouyang.github.io" # TODO-CO
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160 # TODO-CO
